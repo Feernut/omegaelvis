@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+	body
+	{
+		color:#b5e61d;
+		background:black url(elvis.gif) top center fixed;
+		background-size:100% 100%;
+		font-family: Comic Sans MS;
+	}
+	.varg
+	{
+		height:220px;
+	}
+	button
+	{
+		background-color: transparent;
+		outline: none;
+		border: none;
+	}
+</style>
+	<head>
+		<meta charset="utf-8"/>
+		<title>It's Rick and Morty time!</title>
+	</head>
+	<body>
+		<script>
+			function thefren(sound)
+			{
+				document.getElementById(sound).play();
+				setTimeout(() => {window.open("https://www.twitch.tv/vargskelethor","_self");}, "5200");
+			}
+		</script>
+		<h2>Click the boingyboof :)</h2>
+		<button onclick="thefren('time')"><img src="fren.gif" class="varg"></button>
+		<audio id="time">
+			<source src="theelvisreverb.mp3" type="audio/mpeg">
+		</audio> 
+	</body>
+</html>
